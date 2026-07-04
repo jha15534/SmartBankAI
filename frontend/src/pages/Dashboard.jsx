@@ -321,7 +321,7 @@ function Dashboard() {
     //-------------------------------------
     const downloadStatement = async () => {
          window.open(
-            `http://127.0.0.1:8000/download-statement/${accountNumber}`,
+             `https://smartbankai-production.up.railway.app/download-statement/${accountNumber}`,
              "_blank"
 
          );
