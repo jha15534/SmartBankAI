@@ -12,13 +12,13 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 import os
-
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173"
+        "http://localhost:5173",
         "https://smart-bank-ai-taupe.vercel.app",
     ],
     allow_credentials=True,
